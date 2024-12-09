@@ -1,0 +1,41 @@
+/* style.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+header {
+  text-align: center;
+  background-color: #004d99;
+  color: white;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#infoPanel {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+}
+
+#viewDiv {
+  width: 80%;
+  height: 70vh; /* Adjusts the height of the map */
+  margin: 0 auto; /* Centers the map horizontally */
+  border: 1px solid #ccc; /* Optional: Adds a border for better visualization */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  background: linear-gradient(to bottom, #e6e6e6, #ffffff);
+}
