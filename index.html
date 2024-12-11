@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Web Map Application</title>
+    <title>Interactive Web Map</title>
+    <!-- <div id="viewDiv"></div> -->
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="style.css" />
@@ -20,16 +21,30 @@
 
     <!-- Esri Javascript API -->
     <script src="https://js.arcgis.com/4.24/"></script>
+
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Explore the interactive GIS map of the
+    Atlanta Metro Area, created by Andrew Anderson."
+    />
+    <meta
+      name="keywords"
+      content="GIS, Interactive Map, Atlanta, ArcGIS, Web GIS"
+    />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Andrew's Interactive GIS Mapping Application</h1>
+      <h1>🌍 Andrew's Interactive GIS Mapping Application</h1>
     </header>
 
     <!-- Information Panel -->
     <div id="infoPanel">
-      <p>Explore the map below to view the Atlanta Metro Area</p>
+      <p>
+        🗺️ Explore the map below to view the Atlanta Metro Area. Use the toggle
+        to switch basemaps or zoom into the city for more details.
+      </p>
     </div>
 
     <!-- Map Container -->
@@ -38,6 +53,13 @@
     <!-- Footer Section -->
     <footer>
       <p>© 2024 Andrew Anderson. All rights reserved</p>
+      <p>
+        Connect with me on
+        <a href="https://www.linkedin.com/in/andrewanderson3/" target="_blank"
+          >LinkedIn</a
+        >
+        |<a href="mailto:and6084@hotmail.com">Email Me</a>
+      </p>
     </footer>
 
     <script src="app.js"></script>

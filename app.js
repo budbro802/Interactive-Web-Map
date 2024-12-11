@@ -1,3 +1,4 @@
+// Use import URLs directly
 require([
   "esri/config",
   "esri/Map",
@@ -16,12 +17,13 @@ require([
   FeatureLayer,
   BasemapToggle
 ) {
-  //API Key - Using Netlify's injected API key
-  esriConfig.apiKey = `${import.meta.env.VITE_API_KEY}`;
+  const apiKey = `${import.meta.env.VITE_API_KEY}`;
 
-  // Create a Map instance
+  esriConfig.apiKey = apiKey; // Set the Esri API key
+
+  // Create the map
   const map = new Map({
-    basemap: "streets", //Options include "streets", "satellite", etc.
+    basemap: "streets",
   });
 
   // Create a MapView instance and link it to the #viewDiv element
@@ -75,6 +77,4 @@ require([
 
   // Add the BasemapToggle widget tot he bottom-right corner of the MapView
   view.ui.add(basemapToggle, "bottom-right");
-
-  console.log("Map loaded successfully.");
 });
