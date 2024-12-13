@@ -23,3 +23,19 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Ignore environment files
+.env
+
+# Ignore node modules
+node_modules/
+
+# Ignore lock files
+package-lock.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Local Netlify folder
+.netlify
