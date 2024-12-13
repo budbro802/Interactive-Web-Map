@@ -1,21 +1,16 @@
 // Access enviornment variable securely from Netlify
 const apiKey = import.meta.env.VITE_API_KEY;
 
-// // Debug log (for testing purposes)
-// console.log("Loaded API Key:", apiKey);
+esriConfig.apiKey = apiKey; // Set the Esri API key
 
-console.log("Loaded API Key from Netlify:", import.meta.env.VITE_API_KEY);
+console.log("Loaded API Key from Netlify:", apiKey);
 
 // Import ESRI modules using ES modules
-import esriConfig from "https://js.arcgis.com/4.24/esri/config.js";
-import Map from "https://js.arcgis.com/4.24/esri/Map.js";
-import MapView from "https://js.arcgis.com/4.24/esri/views/MapView.js";
-import Zoom from "https://js.arcgis.com/4.24/esri/widgets/Zoom.js";
-import LayerList from "https://js.arcgis.com/4.24/esri/widgets/LayerList.js";
-import FeatureLayer from "https://js.arcgis.com/4.24/esri/layers/FeatureLayer.js";
-import BasemapToggle from "https://js.arcgis.com/4.24/esri/widgets/BasemapToggle.js";
-
-esriConfig.apiKey = apiKey; // Set the Esri API key
+import esriConfig from "@arcgis/core/config";
+import Map from "@arcgis/core/Map";
+import MapView from "@arcgis/core/views/MapView";
+import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
+import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 
 // Create the map
 const map = new Map({

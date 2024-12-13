@@ -12,6 +12,7 @@
     "test": "echo \"Error:no test specified\" && exit 1"
   },
   "dependencies": {
+    "@arcgis/core": "^4.31.6",
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
