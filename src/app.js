@@ -14,7 +14,8 @@ import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 
 // Create the map
 const map = new Map({
-  basemap: "streets",
+  basemap: "arcgis-streets",
+  spatialReference: { wkid: 3857 },
 });
 
 // Create a MapView instance and link it to the #viewDiv element
@@ -23,12 +24,14 @@ const view = new MapView({
   map: map, // Reference to the Map instance created above
   center: [-84.388, 33.749], // Atlanta, GA coordinates]
   zoom: 10, // Initial zoom level
+  spatialReference: { wkid: 3857 },
 });
 
 const citiesLayer = new FeatureLayer({
   url: "https://services.arcgis.com/P3ePLMYs2RVChkJx/ArcGIS/rest/services/USA_Cities_Generalized/FeatureServer/0",
   title: "Cities",
   visible: true,
+  spatialReference: { wkid: 3857 },
 });
 
 // Error handling for cities layer
