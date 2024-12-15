@@ -14,7 +14,7 @@ import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 
 // Create the map
 const map = new Map({
-  basemap: "arcgis-navigation",
+  basemap: "arcgis-streets",
 });
 
 // Create a MapView instance and link it to the #viewDiv element
