@@ -3,8 +3,6 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 esriConfig.apiKey = apiKey; // Set the Esri API key
 
-console.log("Loaded API Key from Netlify:", apiKey);
-
 // Import ESRI modules using ES modules
 import esriConfig from "@arcgis/core/config";
 import Map from "@arcgis/core/Map";
@@ -14,7 +12,7 @@ import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 
 // Create the map
 const map = new Map({
-  basemap: "streets-relief-vector",
+  basemap: "arcgis-streets",
 });
 
 // Create a MapView instance and link it to the #viewDiv element
