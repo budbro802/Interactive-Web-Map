@@ -12,7 +12,7 @@ import BasemapToggle from "@arcgis/core/widgets/BasemapToggle";
 
 // Create the map
 const map = new Map({
-  basemap: "streets-vector",
+  basemap: "terrain",
 });
 
 // Create a MapView instance and link it to the #viewDiv element
